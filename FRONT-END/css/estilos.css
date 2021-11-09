@@ -30,9 +30,11 @@ body {
 	transition: .3s ease all;
 	transform: rotateY(0deg);
 	transform-style: preserve-3d;
+	backface-visibility: hidden;
 	cursor: pointer;
 	z-index: 2;
 }
+
 
 .tarjeta.active {
 	transform: rotateY(180deg);
@@ -52,7 +54,7 @@ body {
 
 .tarjeta .delantera {
 	width: 100%;
-	background: url(../img/tarjeta/bg-tarjeta-01.jpg);
+	background: url(../img/tarjeta/bg-tarjeta-03.jpg);
 	background-size: cover;
 }
 
